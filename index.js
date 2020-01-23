@@ -75,10 +75,15 @@ Person.prototype.toString = function(){
 */
 
 function Car(model, milesPerGallon) {
-  this.tank = 0
-  this. odometer = 0
+  this.tank = 0;
+  this. odometer = 0;
+  this.model = model;
+  this.milesPerGallon = milesPerGallon;
 }
 
+Car.prototype.fill = function(gallons){
+  return this.tank = this.tank + gallons;
+}
 /*
   TASK 3
     - Write a Baby constructor subclassing Person.
@@ -91,9 +96,11 @@ function Baby(name, age, favoriteToy) {
   this.favoriteToy = favoriteToy
 }
 
+Baby.prototype = Object.create(Person.prototype)
 Baby.prototype.play = function(favoriteToy){
   return `Playing with ${this.favoriteToy}`
 }
+
 
 /* 
   TASK 4
