@@ -106,10 +106,13 @@ Baby.prototype.play = function(favoriteToy){
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. Global binding- 
+
+  2. Implicit binding- the 'this' key word is pointing to the opject which has a method function. 
+
+  3. New binding- 
+
+  4. Explicit binding
 */
 
 
